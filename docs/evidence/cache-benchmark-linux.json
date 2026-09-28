@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-27",
+  "rustc": "1.98.1",
+  "arch": "x86_64",
+  "build": "release",
+  "median_ms": 23.684663,
+  "messages_per_run": 100000,
+  "mode": "cache-insert-microbenchmark",
+  "note": "Includes message creation and insertion. Excludes UI, process RSS, GPU, network, and Discord. Shared container; not a Windows result or client comparison.",
+  "platform": "linux",
+  "retained_messages": 4096,
+  "runs": 5,
+  "samples_ms": [16.876140000000003,16.885614,23.684663,25.268056,32.680428],
+  "utf8_payload_bytes": 286720,
+  "warmup_runs": 1
+}

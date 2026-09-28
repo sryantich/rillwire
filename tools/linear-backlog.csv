@@ -1,0 +1,97 @@
+Title,Description,Priority,Status,Project
+[RW-001] Resolve account/API access and SDK eligibility,"Acceptance: Written capability decision; permission/terms risks and product scope recorded
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: None",1,Backlog,Rillwire
+[RW-002] Capture current Windows Discord baseline,"Acceptance: Versioned scenario manifest, 30 launch trials, idle/navigation/soak data
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: None",2,Backlog,Rillwire
+[RW-003] Validate native UI accessibility and text,"Acceptance: NVDA, IME, RTL, emoji, DPI report; egui/Iced decision
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: None",2,Backlog,Rillwire
+[RW-004] Complete gateway replay/session state machine,"Acceptance: READY/RESUMED, close codes, sequence, jitter, faults and compression fixtures
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: None",2,Backlog,Rillwire
+[RW-005] Implement bounded REST scheduler,"Acceptance: Route/major/global buckets, cancellation, retry policy, no duplicate writes
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: RW-001",2,Backlog,Rillwire
+[RW-006] Implement selected auth and credential storage,"Acceptance: System-browser flow, logout/revoke, OS secret storage, no secret logs
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: RW-001",2,Backlog,Rillwire
+[RW-007] Build variable-height timeline and delivery states,"Acceptance: Paging, replies/edits/deletes, selection, pending/failed/sent semantics
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: RW-003, RW-006",2,Backlog,Rillwire
+[RW-008] Add durable bounded cache,"Acceptance: SQLite migration, disk quotas, permission/deletion purge, corruption recovery
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: RW-006",3,Backlog,Rillwire
+[RW-009] Add native notifications/tray,"Acceptance: Mute/DND respected, private toast settings, no lost exit state
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: RW-006",3,Backlog,Rillwire
+[RW-010] Prove DAVE interoperability,"Acceptance: Library/license selection, vectors and eligible-session integration proof
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: RW-001",2,Backlog,Rillwire
+[RW-011] Build Windows voice/audio lab,"Acceptance: WASAPI/Opus, callback budgets, PTT/mute/deafen, unplug/replug/loss recovery
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: RW-010",2,Backlog,Rillwire
+[RW-012] Compare controlled transports,"Acceptance: Two-peer harness, reproducible impairments, CPU/latency/quality results
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: RW-002",3,Backlog,Rillwire
+[RW-013] Package and release securely,"Acceptance: Signed installer/update threat model, checksums, dependencies/license review
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: RW-003, RW-006",2,Backlog,Rillwire
+[RW-014] Publish research site,"Acceptance: Reviewed static content, approved Vercel destination, mobile/desktop check
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: None",3,Backlog,Rillwire
+[RW-015] Enforce performance budgets,"Acceptance: Repeatable Windows matched-workload report with raw runs and regression gate
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: RW-002, RW-007",2,Backlog,Rillwire
+[RW-016] Plan other OS/architectures,"Acceptance: Per-target build/runtime gaps; no untested support claim
+
+Source: docs/ROADMAP.md
+Research scaffold: offline M0; live Discord access unresolved.
+
+Local dependencies: RW-015",4,Backlog,Rillwire

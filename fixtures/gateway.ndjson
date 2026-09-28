@@ -1,0 +1,8 @@
+{"op":10,"d":{"heartbeat_interval":41250},"s":null,"t":null}
+{"op":0,"s":1,"t":"MESSAGE_CREATE","d":{"id":"1525000000000000001","channel_id":"100","author":{"username":"Ari"},"content":"Synthetic fixture. No captured user data."}}
+{"op":11,"d":null,"s":null,"t":null}
+{"op":0,"s":2,"t":"MESSAGE_CREATE","d":{"id":"1525000000000000002","channel_id":"100","author":{"username":"Mika"},"content":"Measure the work, then optimize it."}}
+{"op":0,"s":3,"t":"MESSAGE_DELETE","d":{"id":"1525000000000000001","channel_id":"100"}}
+{"op":0,"s":4,"t":"FUTURE_EVENT","d":{"new_field":true}}
+{"op":7,"d":null,"s":null,"t":null}
+{"op":9,"d":false,"s":null,"t":null}

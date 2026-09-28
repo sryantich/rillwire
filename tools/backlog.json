@@ -1,0 +1,147 @@
+{
+  "project": {
+    "name": "Rillwire",
+    "summary": "Native Rust client research for Windows 11; API access and performance validation first.",
+    "description": "Independent native-client project. M0 offline prototype; M1 text workflow is gated on a supportable Discord access path; M2 DAVE voice; M3 media and platforms.",
+    "color": "#6DE0CA"
+  },
+  "issues": [
+    {
+      "local_key": "RW-001",
+      "title": "Resolve account/API access and SDK eligibility",
+      "priority": 1,
+      "depends_on": [],
+      "description": "Acceptance: Written capability decision; permission/terms risks and product scope recorded\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    },
+    {
+      "local_key": "RW-002",
+      "title": "Capture current Windows Discord baseline",
+      "priority": 2,
+      "depends_on": [],
+      "description": "Acceptance: Versioned scenario manifest, 30 launch trials, idle/navigation/soak data\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    },
+    {
+      "local_key": "RW-003",
+      "title": "Validate native UI accessibility and text",
+      "priority": 2,
+      "depends_on": [],
+      "description": "Acceptance: NVDA, IME, RTL, emoji, DPI report; egui/Iced decision\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    },
+    {
+      "local_key": "RW-004",
+      "title": "Complete gateway replay/session state machine",
+      "priority": 2,
+      "depends_on": [],
+      "description": "Acceptance: READY/RESUMED, close codes, sequence, jitter, faults and compression fixtures\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    },
+    {
+      "local_key": "RW-005",
+      "title": "Implement bounded REST scheduler",
+      "priority": 2,
+      "depends_on": [
+        "RW-001"
+      ],
+      "description": "Acceptance: Route/major/global buckets, cancellation, retry policy, no duplicate writes\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    },
+    {
+      "local_key": "RW-006",
+      "title": "Implement selected auth and credential storage",
+      "priority": 2,
+      "depends_on": [
+        "RW-001"
+      ],
+      "description": "Acceptance: System-browser flow, logout/revoke, OS secret storage, no secret logs\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    },
+    {
+      "local_key": "RW-007",
+      "title": "Build variable-height timeline and delivery states",
+      "priority": 2,
+      "depends_on": [
+        "RW-003",
+        "RW-006"
+      ],
+      "description": "Acceptance: Paging, replies/edits/deletes, selection, pending/failed/sent semantics\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    },
+    {
+      "local_key": "RW-008",
+      "title": "Add durable bounded cache",
+      "priority": 3,
+      "depends_on": [
+        "RW-006"
+      ],
+      "description": "Acceptance: SQLite migration, disk quotas, permission/deletion purge, corruption recovery\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    },
+    {
+      "local_key": "RW-009",
+      "title": "Add native notifications/tray",
+      "priority": 3,
+      "depends_on": [
+        "RW-006"
+      ],
+      "description": "Acceptance: Mute/DND respected, private toast settings, no lost exit state\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    },
+    {
+      "local_key": "RW-010",
+      "title": "Prove DAVE interoperability",
+      "priority": 2,
+      "depends_on": [
+        "RW-001"
+      ],
+      "description": "Acceptance: Library/license selection, vectors and eligible-session integration proof\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    },
+    {
+      "local_key": "RW-011",
+      "title": "Build Windows voice/audio lab",
+      "priority": 2,
+      "depends_on": [
+        "RW-010"
+      ],
+      "description": "Acceptance: WASAPI/Opus, callback budgets, PTT/mute/deafen, unplug/replug/loss recovery\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    },
+    {
+      "local_key": "RW-012",
+      "title": "Compare controlled transports",
+      "priority": 3,
+      "depends_on": [
+        "RW-002"
+      ],
+      "description": "Acceptance: Two-peer harness, reproducible impairments, CPU/latency/quality results\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    },
+    {
+      "local_key": "RW-013",
+      "title": "Package and release securely",
+      "priority": 2,
+      "depends_on": [
+        "RW-003",
+        "RW-006"
+      ],
+      "description": "Acceptance: Signed installer/update threat model, checksums, dependencies/license review\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    },
+    {
+      "local_key": "RW-014",
+      "title": "Publish research site",
+      "priority": 3,
+      "depends_on": [],
+      "description": "Acceptance: Reviewed static content, approved Vercel destination, mobile/desktop check\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    },
+    {
+      "local_key": "RW-015",
+      "title": "Enforce performance budgets",
+      "priority": 2,
+      "depends_on": [
+        "RW-002",
+        "RW-007"
+      ],
+      "description": "Acceptance: Repeatable Windows matched-workload report with raw runs and regression gate\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    },
+    {
+      "local_key": "RW-016",
+      "title": "Plan other OS/architectures",
+      "priority": 4,
+      "depends_on": [
+        "RW-015"
+      ],
+      "description": "Acceptance: Per-target build/runtime gaps; no untested support claim\n\nSource: docs/ROADMAP.md\nResearch scaffold: offline M0; live Discord access unresolved."
+    }
+  ]
+}

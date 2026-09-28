@@ -1,0 +1,16 @@
+[package]
+name = "rillwire-desktop"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+rillwire-core.workspace = true
+eframe.workspace = true
+
+[features]
+capture = ["eframe/__screenshot"]
+
+[lints]
+workspace = true

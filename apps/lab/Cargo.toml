@@ -1,0 +1,14 @@
+[package]
+name = "rillwire-lab"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+rillwire-core.workspace = true
+rillwire-protocol.workspace = true
+serde_json.workspace = true
+
+[lints]
+workspace = true
