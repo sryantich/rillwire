@@ -30,8 +30,18 @@ The recorded median was 23.685 ms for 100,000 synthetic cache insertions in a re
 
 This measurement includes string creation and cache insertion, and excludes parser/UI/GPU/network work and process memory. It is not a Windows result, a Discord comparison, or a stable performance guarantee. Concurrent build activity and shared-host scheduling may influence the sample spread.
 
+## GitHub Actions verification
+
+Verified on 2026-09-29: [Rust CI run #1](https://github.com/sryantich/rillwire/actions/runs/36376314848) for scaffold commit `77d122f5678ec7df3a98054a0c3bcc9d08fd0445` completed successfully on 2026-09-28 UTC.
+
+- Core, protocol and lab tests plus synthetic replay passed on `ubuntu-latest`, `windows-latest` and `macos-latest`.
+- The Windows desktop job passed formatting, Clippy with warnings denied, all workspace tests and the release build for `x86_64-pc-windows-msvc`.
+- The unsigned preview artifact was uploaded successfully (5,721,039 bytes; expires 2026-10-12). Archive digest: `sha256:e6ed1bb041a25a741564fde877d61027ee0f90691c9c910c73d5e1e3f60e107b`.
+
+This establishes Windows executable linking and CI test execution. It does not establish an interactive desktop session, GPU presentation, Windows 11 user experience, or performance relative to Discord. Only the core/protocol/lab subset was built and tested on macOS; the macOS desktop is unverified.
+
 ## Unverified
 
-Windows executable linking and runtime, GPU presentation, NVDA/IME/RTL/high DPI, real input-to-paint timing, idle CPU/power, process memory, Windows PowerShell collection, installer/signing, live APIs, authentication, actual rate-limit behavior, reconnect/resume completeness, voice/video and DAVE. macOS builds have not run locally. GitHub Actions are configured but not executed remotely.
+Windows interactive runtime, GPU presentation, NVDA/IME/RTL/high DPI, real input-to-paint timing, idle CPU/power, process memory, Windows PowerShell collection, installer/signing, live APIs, authentication, actual rate-limit behavior, reconnect/resume completeness, voice/video and DAVE. macOS desktop builds have not run.
 
 The web page is an interactive design concept separate from the native app. Its JavaScript has syntax validation, but browser layout and interactions remain unverified in this environment. Current dependency/download limitations do not alter that status.
